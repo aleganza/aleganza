@@ -9,7 +9,7 @@ I'm **Alessio**, a 21 years old fullstack web developer who likes to develop app
 [![My Skills](https://skillicons.dev/icons?i=svelte,tailwind,threejs,bun)](https://skillicons.dev)
 
 <details>
-  <summary><h2>All skills</h2></summary>
+  <summary><h2>All Skills</h2></summary>
 
   [![My Skills](https://skillicons.dev/icons?i=js,ts,html,css,nodejs,react,electron,firebase,azure)](https://skillicons.dev)
 </details>
