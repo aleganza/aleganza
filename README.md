@@ -6,7 +6,7 @@ I'm **Alessio**, a 21 years old fullstack web developer who likes to develop app
 
 ## Currently Learning:
 
-[![My Skills](https://skillicons.dev/icons?i=svelte,tailwind,threejs,bun)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=svelte,tailwind,godot)](https://skillicons.dev)
 
 <details>
   <summary><h2>All Skills</h2></summary>
