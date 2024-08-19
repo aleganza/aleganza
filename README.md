@@ -1,18 +1,12 @@
 ## Hey There! 🙈
 
 I'm **Alessio**, a 21 years old fullstack web developer who likes to develop apps, websites and put some pixel art in my projects. I've been programming using Javascript/Typescript for 3 years and I love to challenge myself developing open-source projects. 
-
-[![My Skills](https://skillicons.dev/icons?i=ts,react,electron,firebase,azure)](https://skillicons.dev)
+  
+[![My Skills](https://skillicons.dev/icons?i=js,ts,html,css,nodejs,react,electron,firebase,azure)](https://skillicons.dev)
 
 ## Currently Learning:
 
-[![My Skills](https://skillicons.dev/icons?i=svelte,tailwind,godot)](https://skillicons.dev)
-
-<details>
-  <summary><h2>All Skills</h2></summary>
-
-  [![My Skills](https://skillicons.dev/icons?i=js,ts,html,css,nodejs,react,electron,firebase,azure)](https://skillicons.dev)
-</details>
+[![My Skills](https://skillicons.dev/icons?i=godot)](https://skillicons.dev)
 
 <details>
   <summary><h2>Github Stats</h2></summary>
