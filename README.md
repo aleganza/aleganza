@@ -4,10 +4,6 @@ I'm **Alessio**, a 21 years old fullstack web developer who likes to develop app
   
 [![My Skills](https://skillicons.dev/icons?i=js,ts,html,css,nodejs,react,electron,firebase,azure)](https://skillicons.dev)
 
-## Currently Learning:
-
-[![My Skills](https://skillicons.dev/icons?i=godot)](https://skillicons.dev)
-
 <details>
   <summary><h2>Github Stats</h2></summary>
 
