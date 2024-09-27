@@ -1,12 +1,11 @@
-import HomeSection from "@components/Section";
-import SectionCard from "@components/SectionCard";
-import axios from "axios";
-import { useEffect, useState } from "react";
-import { repoNames } from "src/constants/utils";
-import { GithubRepo, Project } from "src/models/types";
+import HomeSection from '@components/Section';
+import SectionCard from '@components/SectionCard';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+import { repoData, repos } from 'src/constants/utils';
+import { GithubRepo, Project } from 'src/models/types';
 
 const Projects = () => {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [projects, setProjects] = useState<Project[]>();
 
   useEffect(() => {
@@ -34,7 +33,7 @@ const Projects = () => {
       ...aleganza,
       ...galileiTheGame,
     ].filter((repo) =>
-      repoNames.some((repoName) => repoName.name === repo.name)
+      repoData.some((repoName) => repoName.name === repo.name)
     );
 
     setProjects(
@@ -43,6 +42,7 @@ const Projects = () => {
         description: repo.description,
         icon: repo.owner.avatar_url,
         stargazers: repo.stargazers_count,
+        link: repo.html_url,
       }))
     );
   };
@@ -52,8 +52,8 @@ const Projects = () => {
       <h1 className="heading unselectable">projects</h1>
 
       <div className="cards-group">
-        {projects?.map((project) => (
-          <SectionCard project={project} />
+        {projects?.concat(repos)?.map((project) => (
+          <SectionCard project={project} key={project.name} />
         ))}
       </div>
     </HomeSection>

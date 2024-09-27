@@ -4,14 +4,16 @@ export interface Project {
   name: string;
   description: string | null;
   icon: string;
-  customIcon?: string;
   stargazers?: number;
+  link: string;
 }
 
-export interface ProjectName {
+export interface ProjectData {
   name: string;
   nameParsed: string;
   tags: Array<string>;
+  downloads?: string;
+  skills?: string;
 }
 
 export interface TagIcons {

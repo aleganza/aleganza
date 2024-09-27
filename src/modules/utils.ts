@@ -1,9 +1,9 @@
 import { IconType } from "react-icons";
 import { tagIcons } from "src/constants/utils";
-import { ProjectName } from "src/models/types";
+import { ProjectData } from "src/models/types";
 
 export const getProjectParsedName = (
-  projectNames: ProjectName[],
+  projectNames: ProjectData[],
   name: string
 ): string | undefined => {
   const repo = projectNames.find((obj) => obj.name === name);
@@ -11,11 +11,27 @@ export const getProjectParsedName = (
 };
 
 export const getProjectTags = (
-  projectNames: ProjectName[],
+  projectNames: ProjectData[],
   name: string
 ): Array<string> | undefined => {
   const repo = projectNames.find((obj) => obj.name === name);
   return repo ? repo.tags : undefined;
+};
+
+export const getProjectDownloads = (
+  projectNames: ProjectData[],
+  name: string
+): string | undefined => {
+  const repo = projectNames.find((obj) => obj.name === name);
+  return repo?.downloads ? repo.downloads : undefined;
+};
+
+export const getProjectSkills = (
+  projectNames: ProjectData[],
+  name: string
+): string | undefined => {
+  const repo = projectNames.find((obj) => obj.name === name);
+  return repo ? repo.skills : undefined;
 };
 
 export const getTagIcon = (tag: string): IconType | undefined => {
