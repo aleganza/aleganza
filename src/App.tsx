@@ -1,12 +1,11 @@
-import Footer from "@components/Footer";
-import "./styles/App.css";
+import './styles/App.css';
 
-import Hero from "@components/Hero";
-import Nav from "@components/Nav";
-import About from "@tabs/About";
-import Projects from "@tabs/Projects";
-import Contact from "@tabs/Contact";
-import Works from "@tabs/Works";
+import Footer from '@components/Footer';
+import Hero from '@components/Hero';
+import Nav from '@components/Nav';
+import About from '@tabs/About';
+import Projects from '@tabs/Projects';
+import Works from '@tabs/Works';
 
 function App() {
   return (
@@ -17,11 +16,9 @@ function App() {
 
       <About />
 
-      <Works />
-
       <Projects />
 
-      <Contact />
+      <Works />
 
       <Footer />
     </>

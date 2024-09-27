@@ -15,7 +15,7 @@ const Nav = () => {
       setLastScrollTop(scrollTop <= 0 ? 0 : scrollTop);
       setScrolled(scrollTop > 50);
 
-      const sections = ["aleganza", "about", "works", "projects", "contact"];
+      const sections = ["aleganza", "about", "projects", "works"];
       const scrollPositions = sections.map((id) => ({
         id,
         offset: document.getElementById(id)?.offsetTop || 0,
@@ -57,13 +57,6 @@ const Nav = () => {
         </a>
 
         <a
-          href="#works"
-          className={`item ${activeSection === "works" ? "active" : ""}`}
-        >
-          <span>works</span>
-        </a>
-
-        <a
           href="#projects"
           className={`item ${activeSection === "projects" ? "active" : ""}`}
         >
@@ -71,11 +64,18 @@ const Nav = () => {
         </a>
 
         <a
+          href="#works"
+          className={`item ${activeSection === "works" ? "active" : ""}`}
+        >
+          <span>works</span>
+        </a>
+
+        {/* <a
           href="#contact"
           className={`item ${activeSection === "contact" ? "active" : ""}`}
         >
           <span>contact</span>
-        </a>
+        </a> */}
       </div>
 
       <div className="links-group">
