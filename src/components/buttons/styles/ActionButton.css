@@ -1,0 +1,32 @@
+button.action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  color: var(--text-primary);
+  background-color: transparent;
+
+  padding: 8px 14px;
+  border: 2px solid var(--text-primary);
+  transition: transform 0.1s ease-out;
+  cursor: pointer;
+}
+
+button.action:hover {
+  outline: 2px solid var(--text-primary)
+}
+
+button.action:active {
+  transform: translateY(3px);
+}
+
+button.action span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+button.action .icon-left,
+button.action .icon-right {
+  font-size: 1.2rem;
+}
