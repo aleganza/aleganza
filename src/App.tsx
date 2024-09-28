@@ -10,17 +10,25 @@ import { useEffect, useState } from "react";
 import { MoonLoader } from "react-spinners";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    window.addEventListener("load", () => {
+    const handleLoad = () => {
       setIsLoading(false);
-    });
+    };
+
+    window.addEventListener("load", handleLoad);
+
+    const interval = setInterval(() => {
+      if (document.readyState === "complete") {
+        setIsLoading(false);
+        clearInterval(interval);
+      }
+    }, 100);
 
     return () => {
-      window.removeEventListener("load", () => {
-        setIsLoading(false);
-      });
+      window.removeEventListener("load", handleLoad);
+      clearInterval(interval);
     };
   }, []);
 

@@ -191,19 +191,42 @@
   }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 900px) {
+  .home-section h1.heading {
+    margin-top: 20px;
+  }
+
   .home-section .about {
     width: auto;
     text-align: left;
+    margin-top: 30px;
   }
 
   .home-section .about .skills {
     margin-top: 30px;
   }
 
+  .home-section .cards-group {
+    gap: 50px;
+    margin-top: 30px;
+  }
+
   .home-section .cards-group .card,
   .home-section .cards-group .card:nth-child(2n) {
     flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .home-section .cards-group .card .title {
+    margin-bottom: 6px;
+  }
+
+  .home-section .cards-group .card .tags-group {
+    margin-bottom: 10px;
+  }
+
+  .home-section .cards-group .card .link {
+    margin-top: 12px;
   }
 }
 
@@ -212,9 +235,7 @@
     width: 100%;
     height: auto;
   }
-}
 
-@media only screen and (max-width: 550px) {
   .home-section .cards-group .card img.banner {
     height: auto;
     aspect-ratio: 1.77;
