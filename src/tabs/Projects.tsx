@@ -9,7 +9,7 @@ const Projects = () => {
   const [projects, setProjects] = useState<Project[]>();
 
   useEffect(() => {
-    // fetchRepos();
+    fetchRepos();
   }, []);
 
   const fetchRepos = async () => {

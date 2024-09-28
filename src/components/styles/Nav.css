@@ -56,8 +56,9 @@ nav.sidebar .items-group a.item:hover:not(.logo):not(.active) span {
 
 nav.sidebar .links-group {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
-  gap: 30px
+  gap: 30px;
 }
 
 nav.sidebar .links-group a.link {
@@ -74,4 +75,10 @@ nav.sidebar .links-group a.link > * {
 
 nav.sidebar .links-group a.link:hover > * {
   color: var(--text);
+}
+
+@media only screen and (max-width: 900px) {
+  nav.sidebar {
+    display: none;
+  }
 }

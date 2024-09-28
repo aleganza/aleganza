@@ -12,7 +12,7 @@
 .home-section h1.heading {
   margin-top: 100px;
   color: var(--text-primary);
-  font-size: 2rem;
+  font-size: 38px;
   font-weight: 400;
   text-align: center;
 }
@@ -35,6 +35,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .home-section .about .skills img {
@@ -54,7 +55,6 @@
   display: flex;
   gap: 30px;
   width: 100%;
-  height: 350px;
   border-radius: 24px;
 }
 
@@ -92,7 +92,7 @@
 
 .home-section .cards-group .card img.banner {
   width: 100%;
-  height: 100%;
+  height: 380px;
   object-fit: cover;
   border-radius: 24px;
 }
@@ -135,7 +135,7 @@
 }
 
 .home-section .cards-group .card .name {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 400;
   color: var(--text);
 }
@@ -183,4 +183,45 @@
 .home-section .cards-group .card .link {
   padding: 0 5px;
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .home-section .cards-group .card img.banner {
+    height: 280px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .home-section .about {
+    width: auto;
+    text-align: left;
+  }
+
+  .home-section .about .skills {
+    margin-top: 30px;
+  }
+
+  .home-section .cards-group .card,
+  .home-section .cards-group .card:nth-child(2n) {
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home-section .about .skills img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .home-section .cards-group .card img.banner {
+    height: auto;
+    aspect-ratio: 1.77;
+  }
+
+  .home-section .cards-group .card,
+  .home-section .cards-group .card:nth-child(2n) {
+    flex-direction: column-reverse;
+  }
 }

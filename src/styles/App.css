@@ -50,6 +50,18 @@ body {
   background-color: var(--background);
 }
 
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background);
+} 
+
 a.no-underline {
   text-decoration: none;
 }
@@ -79,3 +91,22 @@ button {
   -moz-user-select: none;
   -ms-user-select: none;
 }
+
+@media only screen and (max-width: 1000px) {
+  * {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  * {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 350) {
+  * {
+    font-size: 10px;
+  }
+}
+

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./styles/Nav.css";
 import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
 import { FaItchIo } from "react-icons/fa";
+import { Fade } from "react-awesome-reveal";
 
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -40,77 +41,81 @@ const Nav = () => {
   return (
     <nav className={`sidebar ${scrolled ? "bg" : ""}`}>
       <div className="items-group">
-        <a
-          href="#aleganza"
-          className={`item logo ${
-            activeSection === "aleganza" ? "active" : ""
-          }`}
-        >
-          <span>aleganza</span>
-        </a>
+        <Fade direction="down" triggerOnce cascade damping={0.3}>
+          <a
+            href="#aleganza"
+            className={`item logo ${
+              activeSection === "aleganza" ? "active" : ""
+            }`}
+          >
+            <span>aleganza</span>
+          </a>
 
-        <a
-          href="#about"
-          className={`item ${activeSection === "about" ? "active" : ""}`}
-        >
-          <span>about</span>
-        </a>
+          <a
+            href="#about"
+            className={`item ${activeSection === "about" ? "active" : ""}`}
+          >
+            <span>about</span>
+          </a>
 
-        <a
-          href="#projects"
-          className={`item ${activeSection === "projects" ? "active" : ""}`}
-        >
-          <span>projects</span>
-        </a>
+          <a
+            href="#projects"
+            className={`item ${activeSection === "projects" ? "active" : ""}`}
+          >
+            <span>projects</span>
+          </a>
 
-        <a
-          href="#works"
-          className={`item ${activeSection === "works" ? "active" : ""}`}
-        >
-          <span>works</span>
-        </a>
+          <a
+            href="#works"
+            className={`item ${activeSection === "works" ? "active" : ""}`}
+          >
+            <span>works</span>
+          </a>
 
-        {/* <a
+          {/* <a
           href="#contact"
           className={`item ${activeSection === "contact" ? "active" : ""}`}
         >
           <span>contact</span>
         </a> */}
+        </Fade>
       </div>
 
       <div className="links-group">
-        <a
-          href="https://github.com/aleganza"
-          className="link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FiGithub />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/alessio-ganzarolli-87425a240"
-          className="link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FiLinkedin />
-        </a>
-        <a
-          href="https://www.instagram.com/aleganza_"
-          className="link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FiInstagram />
-        </a>
-        <a
-          href="https://aleganza.itch.io/"
-          className="link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaItchIo />
-        </a>
+        <Fade direction="down" triggerOnce cascade damping={0.3}>
+          <a
+            href="https://aleganza.itch.io/"
+            className="link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaItchIo />
+          </a>
+          <a
+            href="https://www.instagram.com/aleganza_"
+            className="link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FiInstagram />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/alessio-ganzarolli-87425a240"
+            className="link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FiLinkedin />
+          </a>
+          <a
+            href="https://github.com/aleganza"
+            className="link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FiGithub />
+          </a>
+        </Fade>
       </div>
     </nav>
   );

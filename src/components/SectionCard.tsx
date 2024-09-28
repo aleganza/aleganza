@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { FiDownload, FiExternalLink, FiStar } from "react-icons/fi";
 import { projectNames } from "src/constants/utils";
 import { Project } from "src/models/types";
@@ -13,23 +12,23 @@ import {
 import ActionButton from "./buttons/ActionButton";
 
 const SectionCard: React.FC<{ project: Project }> = ({ project }) => {
-  const ICON_PATH = `images/projects/icons/${project.name}.png`;
+  // const ICON_PATH = `images/projects/icons/${project.name}.png`;
   const BANNER_PATH = `images/projects/banners/${project.name}.jpg`;
 
-  const [iconSrc, setIconSrc] = useState<string>(ICON_PATH);
+  // const [iconSrc, setIconSrc] = useState<string>(ICON_PATH);
 
-  useEffect(() => {
-    const img = new Image();
-    img.src = ICON_PATH;
+  // useEffect(() => {
+  //   const img = new Image();
+  //   img.src = ICON_PATH;
 
-    img.onload = () => {
-      setIconSrc(ICON_PATH);
-    };
+  //   img.onload = () => {
+  //     setIconSrc(ICON_PATH);
+  //   };
 
-    img.onerror = () => {
-      setIconSrc(project.icon);
-    };
-  }, [ICON_PATH, project.icon]);
+  //   img.onerror = () => {
+  //     setIconSrc(project.icon);
+  //   };
+  // }, [ICON_PATH, project.icon]);
 
   return (
     <div className="card">
