@@ -147,8 +147,6 @@
   color: var(--background-primary);
   background-color: var(--text-primary);
   font-weight: 500;
-  /* color: var(--text-primary);
-  background-color: var(--background-primary); */
   border-radius: 9999999px;
 }
 
@@ -166,6 +164,11 @@
   color: var(--text-shy);
   background-color: var(--background-primary);
   border-radius: 12px;
+}
+
+.home-section .cards-group .card .tag.stargazers {
+  color: var(--text-primary);
+  font-weight: 500;
 }
 
 .home-section .cards-group .card .tag.downloads {

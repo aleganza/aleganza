@@ -56,15 +56,21 @@ const SectionCard: React.FC<{ project: Project }> = ({ project }) => {
             {getProjectParsedName(projectNames, project.name)}
           </h1>
 
-          {project.stargazers && (
+          {/* {project.stargazers && (
             <span className="stargazers">
               <FiStar />
               {project.stargazers}
             </span>
-          )}
+          )} */}
         </div>
 
         <div className="tags-group">
+          {project.stargazers && (
+            <span className="tag stargazers">
+              <FiStar />
+              {project.stargazers}
+            </span>
+          )}
           {getProjectDownloads(projectNames, project.name) && (
             <span className="tag downloads">
               {<FiDownload />}
@@ -86,10 +92,9 @@ const SectionCard: React.FC<{ project: Project }> = ({ project }) => {
 
         <div className="link">
           <a
-            href={getProjectCustomLink(
-              projectNames,
-              project.name
-            ) || project.link}
+            href={
+              getProjectCustomLink(projectNames, project.name) || project.link
+            }
             className="no-underline"
             target="_blank"
           >
