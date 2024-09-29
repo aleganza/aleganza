@@ -42,6 +42,7 @@ export const repoData: ProjectData[] = [
     tags: ["minecraft", "fabric"],
     downloads: "1,700,000 +",
     skills: "java",
+    customLink: "https://www.curseforge.com/minecraft/mc-mods/plenty-of-armors"
   },
   {
     name: "akuse",

@@ -2,6 +2,7 @@ import { FiDownload, FiExternalLink, FiStar } from "react-icons/fi";
 import { projectNames } from "src/constants/utils";
 import { Project } from "src/models/types";
 import {
+  getProjectCustomLink,
   getProjectDownloads,
   getProjectParsedName,
   getProjectSkills,
@@ -84,7 +85,14 @@ const SectionCard: React.FC<{ project: Project }> = ({ project }) => {
         <div className="description">{project.description}</div>
 
         <div className="link">
-          <a href={project.link} className="no-underline" target="_blank">
+          <a
+            href={getProjectCustomLink(
+              projectNames,
+              project.name
+            ) || project.link}
+            className="no-underline"
+            target="_blank"
+          >
             <ActionButton text="view" iconRight={FiExternalLink} />
           </a>
         </div>

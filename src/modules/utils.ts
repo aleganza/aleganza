@@ -34,6 +34,14 @@ export const getProjectSkills = (
   return repo ? repo.skills : undefined;
 };
 
+export const getProjectCustomLink = (
+  projectNames: ProjectData[],
+  name: string
+): string | undefined => {
+  const repo = projectNames.find((obj) => obj.name === name);
+  return repo?.customLink ? repo.customLink : undefined;
+};
+
 export const getTagIcon = (tag: string): IconType | undefined => {
   const tagIcon = tagIcons.find((obj) => obj.tag === tag);
   return tagIcon ? tagIcon.icon : undefined;

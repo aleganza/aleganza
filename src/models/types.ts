@@ -14,6 +14,7 @@ export interface ProjectData {
   tags: Array<string>;
   downloads?: string;
   skills?: string;
+  customLink?: string
 }
 
 export interface TagIcons {
