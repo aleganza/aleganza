@@ -103,6 +103,9 @@ nav.mobile .bar3.open {
 }
 
 .mobile-menu .links-group .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   color: var(--text-shy);
   text-decoration: none;
