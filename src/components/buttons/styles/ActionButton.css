@@ -9,7 +9,6 @@ button.action {
 
   padding: 8px 14px;
   border: 2px solid var(--text-primary);
-  transition: transform 0.1s ease-out;
   cursor: pointer;
 }
 
@@ -18,7 +17,7 @@ button.action:hover {
 }
 
 button.action:active {
-  transform: translateY(3px);
+  transform: scale(0.95);
 }
 
 button.action span {

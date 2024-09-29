@@ -109,7 +109,6 @@
 .home-section .cards-group .card .icons img {
   width: auto;
   height: 55px;
-  border-radius: 16px;
 }
 
 .home-section .cards-group .card .icons img.logo {
@@ -144,7 +143,6 @@
   display: flex;
   align-items: center;
   gap: 2px;
-  margin-top: 5px;
   padding: 4px 8px;
   color: var(--background-primary);
   background-color: var(--text-primary);
@@ -194,6 +192,7 @@
 @media only screen and (max-width: 900px) {
   .home-section h1.heading {
     margin-top: 20px;
+    font-size: 30px;
   }
 
   .home-section .about {
@@ -208,7 +207,7 @@
 
   .home-section .cards-group {
     gap: 50px;
-    margin-top: 30px;
+    margin-top: 10px;
   }
 
   .home-section .cards-group .card,
@@ -227,6 +226,14 @@
 
   .home-section .cards-group .card .link {
     margin-top: 12px;
+  }
+
+  .home-section .cards-group .card .icons {
+    left: 10px;
+  }
+
+  .home-section .cards-group .card .icons img {
+    height: 40px;
   }
 }
 

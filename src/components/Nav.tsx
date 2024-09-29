@@ -71,13 +71,6 @@ const Nav = () => {
           >
             <span>works</span>
           </a>
-
-          {/* <a
-          href="#contact"
-          className={`item ${activeSection === "contact" ? "active" : ""}`}
-        >
-          <span>contact</span>
-        </a> */}
         </Fade>
       </div>
 
