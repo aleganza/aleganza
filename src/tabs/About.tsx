@@ -35,7 +35,10 @@ const About = () => {
         </p>
 
         <div className="skills">
-          <img src="https://skillicons.dev/icons?i=js,ts,css,svelte,react,electron,tailwind,firebase,azure" />
+          <img
+            src="https://skillicons.dev/icons?i=js,ts,css,svelte,react,electron,tailwind,firebase,azure"
+            alt="skill-icons"
+          />
         </div>
       </div>
     </HomeSection>

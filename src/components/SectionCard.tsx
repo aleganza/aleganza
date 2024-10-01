@@ -41,7 +41,7 @@ const SectionCard: React.FC<{ project: Project }> = ({ project }) => {
                 projectNames,
                 project.name
               )}`}
-              alt="project_logo"
+              alt="project-stack"
             />
             {/* <img src={iconSrc} alt="project_logo" className="logo" /> */}
           </div>
