@@ -1,4 +1,4 @@
-![](https://komarev.com/ghpvc/?username=aleganza&color=red)
+![](https://komarev.com/ghpvc/?username=aleganza&color=red)  <from 01/10/2024>
 
 ## Hey There! 🙈
 
