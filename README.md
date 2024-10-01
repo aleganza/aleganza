@@ -1,4 +1,4 @@
-![](https://komarev.com/ghpvc/?username=aleganza&color=red)  <da due ott duemilaventiquattro>
+![](https://komarev.com/ghpvc/?username=aleganza&color=red)  <from first oct twentytwentyfour>
 
 ## Hey There! 🙈
 
