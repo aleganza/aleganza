@@ -1,11 +1,17 @@
 import { FaAndroid, FaApple, FaLinux, FaWindows } from "react-icons/fa";
-import { FiSettings } from "react-icons/fi";
+import { FiSettings, FiSmartphone } from "react-icons/fi";
 import { IoCubeOutline } from "react-icons/io5";
 import { TfiWorld } from "react-icons/tfi";
 import { Project, ProjectData, TagIcons } from "src/models/types";
 
 // static projects
 export const works: Project[] = [
+  {
+    name: "lc-training-center",
+    description: "Developed an app for the LC Training Center gym to manage member bookings more efficiently. It simplifies the process, making it easier for users to reserve classes and for staff to organize schedules, improving both the gym's operations and the user experience.",
+    icon: "",
+    link: "https://apps.apple.com/it/app/lc-training-center/id6499268268"
+  },
   {
     name: "pixel-dream-studios",
     description:
@@ -26,6 +32,12 @@ export const repos: Project[] = [
 ];
 
 export const workData: ProjectData[] = [
+  {
+    name: "lc-training-center",
+    nameParsed: "LC Training Center",
+    tags: ["app", "ios", "android"],
+    skills: "firebase,react,ts"
+  },
   {
     name: "pixel-dream-studios",
     nameParsed: "Pixel Dream Studios",
@@ -66,6 +78,7 @@ export const repoData: ProjectData[] = [
 ];
 
 export const tagIcons: TagIcons[] = [
+  { tag: "app", icon: FiSmartphone },
   { tag: "website", icon: TfiWorld },
   { tag: "minecraft", icon: IoCubeOutline },
   { tag: "fabric", icon: FiSettings },
