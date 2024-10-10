@@ -7,17 +7,25 @@ import { Project, ProjectData, TagIcons } from "src/models/types";
 // static projects
 export const works: Project[] = [
   {
-    name: "lc-training-center",
-    description: "Developed an app for the LC Training Center gym to manage member bookings more efficiently. It simplifies the process, making it easier for users to reserve classes and for staff to organize schedules, improving both the gym's operations and the user experience.",
-    icon: "",
-    link: "https://apps.apple.com/it/app/lc-training-center/id6499268268"
-  },
-  {
     name: "pixel-dream-studios",
     description:
       "Developed a website for the Pixel Dream Studios modding team. The site showcases their story, features their custom wiki, and highlights the projects they've worked on. It's a way for them to share their journey and all the cool stuff they've created with the community.",
     icon: "https://static-cdn.jtvnw.net/jtv_user_pictures/98ff877a-7a9f-4615-b2c6-973c07ed84c8-profile_image-150x150.png",
     link: "https://pixeldreamstudios.net",
+  },
+  {
+    name: "zanini-piscine",
+    description:
+      "Developed an app for Zanini Piscine to simplify booking pool opening, closing, and maintenance services. It streamlines scheduling for homeowners and helps Zanini Piscine efficiently manage their service calendar, improving both operations and customer experience.",
+    icon: "",
+    link: "#",
+  },
+  {
+    name: "lc-training-center",
+    description:
+      "Developed an app for the LC Training Center gym to manage member bookings more efficiently. It simplifies the process, making it easier for users to reserve classes and for staff to organize schedules, improving both the gym's operations and the user experience.",
+    icon: "",
+    link: "https://apps.apple.com/it/app/lc-training-center/id6499268268",
   },
 ];
 
@@ -36,7 +44,13 @@ export const workData: ProjectData[] = [
     name: "lc-training-center",
     nameParsed: "LC Training Center",
     tags: ["app", "ios", "android"],
-    skills: "firebase,react,ts"
+    skills: "firebase,react,ts",
+  },
+  {
+    name: "zanini-piscine",
+    nameParsed: "Zanini Piscine",
+    tags: ["app", "ios", "android"],
+    skills: "firebase,react,ts",
   },
   {
     name: "pixel-dream-studios",
@@ -54,7 +68,7 @@ export const repoData: ProjectData[] = [
     tags: ["minecraft", "fabric"],
     downloads: "1,700,000 +",
     skills: "java",
-    customLink: "https://www.curseforge.com/minecraft/mc-mods/plenty-of-armors"
+    customLink: "https://www.curseforge.com/minecraft/mc-mods/plenty-of-armors",
   },
   {
     name: "akuse",
