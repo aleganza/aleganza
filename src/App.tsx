@@ -3,6 +3,7 @@ import Footer from "@components/Footer";
 import Hero from "@components/Hero";
 import Nav from "@components/Nav";
 import NavMobile from "@components/NavMobile";
+import ParticlesBackground from "@components/ParticlesBackground";
 import About from "@tabs/About";
 import Projects from "@tabs/Projects";
 import Works from "@tabs/Works";
@@ -42,6 +43,8 @@ function App() {
 
   return (
     <>
+      <ParticlesBackground />
+
       <Nav />
 
       <NavMobile />

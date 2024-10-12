@@ -79,7 +79,7 @@ export const repoData: ProjectData[] = [
   },
   {
     name: "Galilei-The-Game",
-    nameParsed: "Galilei The Game",
+    nameParsed: "Galilei: The Game",
     tags: ["windows", "macos", "linux"],
     skills: "unity",
   },

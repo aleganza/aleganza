@@ -71,6 +71,7 @@
 
 .home-section .cards-group .card .left {
   flex: 1.5;
+  height: 380px;
 }
 
 .home-section .cards-group .card .right {
@@ -188,6 +189,10 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  .home-section .cards-group .card .left {
+    height: 280px;
+  }
+
   .home-section .cards-group .card img.banner {
     height: 280px;
   }
