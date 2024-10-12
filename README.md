@@ -1,3 +1,5 @@
+![](https://komarev.com/ghpvc/?username=aleganza&style=for-the-badge&color=red)
+
 ## Hey There! 🙈
 
 I'm **Alessio**, a 21 years old fullstack web developer who likes to develop apps, websites and put some pixel art in my projects. I've been programming using Javascript/Typescript for 3 years and I love to challenge myself developing open-source projects.
@@ -9,7 +11,8 @@ Occasionally, I develop websites and apps as a **freelancer**. Have a look at my
   
 [![My Skills](https://skillicons.dev/icons?i=js,ts,css,svelte,react,electron,tailwind,firebase,azure)](https://skillicons.dev)
 
-![](https://komarev.com/ghpvc/?username=aleganza&style=for-the-badge&color=red)
+[![Portfolio](https://img.shields.io/badge/Portfolio-f4ce34?style=for-the-badge&logo=codecrafters&logoColor=black)](https://aleganza.dev)
+[![Resume](https://img.shields.io/badge/Resume-FFFFFF?style=for-the-badge&logo=googledocs&logoColor=black)](https://aleganza.dev/Alessio_Ganzarolli_Resume.pdf)
 [![Instagram](https://img.shields.io/badge/aleganza-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/alessio-ganzarolli-87425a240)
 [![Reddit](https://img.shields.io/badge/aleganza-FF4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/user/aleganza_/)
 [![Instagram](https://img.shields.io/badge/aleganza__-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/aleganza_)
