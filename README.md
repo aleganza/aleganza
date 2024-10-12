@@ -6,10 +6,9 @@ I'm **Alessio**, a 21 years old fullstack web developer who likes to develop app
 Occasionally, I develop websites and apps as a **freelancer**. Have a look at my work [here](https://aleganza.dev/).
 
 <br>
-  
+
 [![My Skills](https://skillicons.dev/icons?i=js,ts,css,svelte,react,electron,tailwind,firebase,azure)](https://skillicons.dev)
 
-![](https://komarev.com/ghpvc/?username=aleganza&style=for-the-badge&color=red)
 [![Portfolio](https://img.shields.io/badge/Portfolio-f4ce34?style=for-the-badge&logo=codecrafters&logoColor=black)](https://aleganza.dev)
 [![Resume](https://img.shields.io/badge/Resume-FFFFFF?style=for-the-badge&logo=googledocs&logoColor=black)](https://aleganza.dev/Alessio_Ganzarolli_Resume.pdf)
 [![Instagram](https://img.shields.io/badge/aleganza-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/alessio-ganzarolli-87425a240)
@@ -19,6 +18,8 @@ Occasionally, I develop websites and apps as a **freelancer**. Have a look at my
 
 <details>
   <summary><h2>Github Stats</h2></summary>
+
+  ![](https://komarev.com/ghpvc/?username=aleganza&style=for-the-badge&color=red)
 
    [![My Awesome Stats](https://awesome-github-stats.azurewebsites.net/user-stats/aleganza?cardType=level&theme=ayu-mirage&preferLogin=true)](https://git.io/awesome-stats-card)
 
