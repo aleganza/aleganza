@@ -7,7 +7,7 @@ Occasionally, I develop websites and apps as a **freelancer**. Have a look at my
 
 <br>
 
-[![My Skills](https://skillicons.dev/icons?i=js,ts,css,svelte,react,electron,nextjs,tailwind,firebase,mysql,azure)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,ts,css,svelte,react,electron,nextjs,tailwind,mysql,firebase,azure)](https://skillicons.dev)
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-f4ce34?style=for-the-badge&logo=codecrafters&logoColor=black)](https://aleganza.dev)
 [![Resume](https://img.shields.io/badge/Resume-FFFFFF?style=for-the-badge&logo=googledocs&logoColor=black)](https://aleganza.dev/Alessio_Ganzarolli_Resume.pdf)
