@@ -11,6 +11,7 @@ export interface Project {
 export interface ProjectData {
   name: string;
   nameParsed: string;
+  type: string;
   tags: Array<string>;
   downloads?: string;
   skills?: string;
@@ -20,6 +21,7 @@ export interface ProjectData {
 export interface TagIcons {
   tag: string;
   icon: IconType;
+  color?: string;
 }
 
 export interface GithubRepo {

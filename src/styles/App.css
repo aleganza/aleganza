@@ -8,16 +8,21 @@
   --text-supporting: #d6d6d6;
   --text-shy: #bdbdbd;
   --text-muted: #6a6a6a;
-
-  --background: #242422;
+  
+  /* --background: #242422;
   --background-t: #26262480;
   --background-primary: #1a1a18;
-  --background-secondary: #0d0d0c;
+  --background-secondary: #0d0d0c; */
+
+  --background: #13141e; 
+  --background-t: #1A1F2880;
+  --background-primary: #1A1F28; 
+  --background-secondary: #0e0e15;
 
   --font-family-1: "Montserrat", sans-serif;
 
-  --page-width: 1200px;
-  --page-max-width: calc(100% - 30px);
+  --page-width: 900px;
+  --page-max-width: calc(100% - 40px);
   --border-radius: 24px;
 }
 

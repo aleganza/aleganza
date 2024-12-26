@@ -3,10 +3,10 @@ import SectionCard from "@components/SectionCard";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { MoonLoader } from "react-spinners";
-import { repoData, repos } from "src/constants/utils";
+import { web, webData } from "src/constants/utils";
 import { GithubRepo, Project } from "src/models/types";
 
-const Projects = () => {
+const Web = () => {
   const [projects, setProjects] = useState<Project[]>();
   const [loading, setLoading] = useState<boolean>(false);
 
@@ -38,7 +38,7 @@ const Projects = () => {
         ...aleganza,
         ...galileiTheGame,
       ].filter((repo) =>
-        repoData.some((repoName) => repoName.name === repo.name)
+        webData.some((repoName) => repoName.name === repo.name)
       );
 
       setProjects(
@@ -58,15 +58,15 @@ const Projects = () => {
   };
 
   return (
-    <HomeSection id="projects">
-      <h1 className="heading unselectable">projects</h1>
+    <HomeSection id="web">
+      <h1 className="heading unselectable">Web Projects</h1>
 
       <div className="cards-group">
         {loading ? (
           <MoonLoader color="#f4ce34" loading size={30} speedMultiplier={1} />
         ) : (
           projects
-            ?.concat(repos)
+            ?.concat(web)
             ?.map((project) => (
               <SectionCard project={project} key={project.name} />
             ))
@@ -76,4 +76,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Web;

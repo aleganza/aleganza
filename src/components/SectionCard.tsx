@@ -7,6 +7,8 @@ import {
   getProjectParsedName,
   getProjectSkills,
   getProjectTags,
+  getProjectType,
+  getTagColor,
   getTagIcon,
 } from "src/modules/utils";
 
@@ -51,18 +53,11 @@ const SectionCard: React.FC<{ project: Project }> = ({ project }) => {
       </div>
 
       <div className="right">
-        <div className="title">
-          <h1 className="name">
-            {getProjectParsedName(projectNames, project.name)}
-          </h1>
+        <div className="type">{getProjectType(projectNames, project.name)}</div>
 
-          {/* {project.stargazers && (
-            <span className="stargazers">
-              <FiStar />
-              {project.stargazers}
-            </span>
-          )} */}
-        </div>
+        <h1 className="name">
+          {getProjectParsedName(projectNames, project.name)}
+        </h1>
 
         <div className="tags-group">
           {project.stargazers && (
@@ -80,7 +75,11 @@ const SectionCard: React.FC<{ project: Project }> = ({ project }) => {
           {getProjectTags(projectNames, project.name)?.map((tag) => {
             const TagIcon = getTagIcon(tag);
             return (
-              <span className="tag" key={tag}>
+              <span
+                className="tag"
+                key={tag}
+                style={{ color: getTagColor(tag) }}
+              >
                 {TagIcon && <TagIcon className="tag-icon" />}
                 {tag}
               </span>

@@ -129,7 +129,7 @@ nav.mobile .bar3.open {
   grid-column: span 2;
 } */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
   nav.mobile {
     display: flex;
   }

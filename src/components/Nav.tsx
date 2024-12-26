@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
-import "./styles/Nav.css";
-import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
-import { FaItchIo } from "react-icons/fa";
-import { Fade } from "react-awesome-reveal";
+import './styles/Nav.css';
+
+import { useEffect, useState } from 'react';
+import { Fade } from 'react-awesome-reveal';
+import { FaItchIo } from 'react-icons/fa';
+import { FiGithub, FiLinkedin } from 'react-icons/fi';
 
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -16,7 +17,7 @@ const Nav = () => {
       setLastScrollTop(scrollTop <= 0 ? 0 : scrollTop);
       setScrolled(scrollTop > 50);
 
-      const sections = ["aleganza", "about", "projects", "works"];
+      const sections = ["aleganza", "web", "gamedev"];
       const scrollPositions = sections.map((id) => ({
         id,
         offset: document.getElementById(id)?.offsetTop || 0,
@@ -52,24 +53,17 @@ const Nav = () => {
           </a>
 
           <a
-            href="#about"
-            className={`item ${activeSection === "about" ? "active" : ""}`}
+            href="#web"
+            className={`item ${activeSection === "web" ? "active" : ""}`}
           >
-            <span>about</span>
+            <span>web</span>
           </a>
 
           <a
-            href="#projects"
-            className={`item ${activeSection === "projects" ? "active" : ""}`}
+            href="#gamedev"
+            className={`item ${activeSection === "gamedev" ? "active" : ""}`}
           >
-            <span>projects</span>
-          </a>
-
-          <a
-            href="#works"
-            className={`item ${activeSection === "works" ? "active" : ""}`}
-          >
-            <span>works</span>
+            <span>gamedev</span>
           </a>
         </Fade>
       </div>
@@ -83,14 +77,6 @@ const Nav = () => {
             rel="noopener noreferrer"
           >
             <FaItchIo />
-          </a>
-          <a
-            href="https://www.instagram.com/aleganza_"
-            className="link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FiInstagram />
           </a>
           <a
             href="https://www.linkedin.com/in/alessio-ganzarolli-87425a240"

@@ -1,14 +1,13 @@
-import "./styles/App.css";
-import Footer from "@components/Footer";
-import Hero from "@components/Hero";
-import Nav from "@components/Nav";
-import NavMobile from "@components/NavMobile";
-import ParticlesBackground from "@components/ParticlesBackground";
-import About from "@tabs/About";
-import Projects from "@tabs/Projects";
-import Works from "@tabs/Works";
-import { useEffect, useState } from "react";
-import { MoonLoader } from "react-spinners";
+import './styles/App.css';
+
+import Footer from '@components/Footer';
+import Hero from '@components/Hero';
+import Nav from '@components/Nav';
+import NavMobile from '@components/NavMobile';
+import Works from '@tabs/Gamedev';
+import Projects from '@tabs/Web';
+import { useEffect, useState } from 'react';
+import { MoonLoader } from 'react-spinners';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -43,7 +42,7 @@ function App() {
 
   return (
     <>
-      <ParticlesBackground />
+      {/* <ParticlesBackground /> */}
 
       <Nav />
 
@@ -51,7 +50,7 @@ function App() {
 
       <Hero />
 
-      <About />
+      {/* <About /> */}
 
       <Projects />
 

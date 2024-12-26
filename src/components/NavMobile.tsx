@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import "./styles/NavMobile.css";
-import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
-import { FaItchIo } from "react-icons/fa";
+import './styles/NavMobile.css';
+
+import React, { useState } from 'react';
+import { FaItchIo } from 'react-icons/fa';
+import { FiGithub, FiLinkedin } from 'react-icons/fi';
 
 const NavMobile: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,14 +27,11 @@ const NavMobile: React.FC = () => {
 
       <div className={isOpen ? "mobile-menu open" : "mobile-menu"}>
         <div className="items-group">
-          <a href="#about" className="item">
-            about
+          <a href="#web" className="item">
+            web
           </a>
-          <a href="#projects" className="item">
-            projects
-          </a>
-          <a href="#works" className="item">
-            works
+          <a href="#gamedev" className="item">
+            gamedev
           </a>
         </div>
 
@@ -45,14 +43,6 @@ const NavMobile: React.FC = () => {
             rel="noopener noreferrer"
           >
             <FaItchIo />
-          </a>
-          <a
-            href="https://www.instagram.com/aleganza_"
-            className="link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FiInstagram />
           </a>
           <a
             href="https://www.linkedin.com/in/alessio-ganzarolli-87425a240"

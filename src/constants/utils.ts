@@ -1,3 +1,4 @@
+import { CiDesktopMouse1 } from "react-icons/ci";
 import { FaAndroid, FaApple, FaLinux, FaWindows } from "react-icons/fa";
 import { FiSettings, FiSmartphone } from "react-icons/fi";
 import { IoCubeOutline } from "react-icons/io5";
@@ -5,7 +6,7 @@ import { TfiWorld } from "react-icons/tfi";
 import { Project, ProjectData, TagIcons } from "src/models/types";
 
 // static projects
-export const works: Project[] = [
+export const web: Project[] = [
   {
     name: "pixel-dream-studios",
     description:
@@ -13,13 +14,13 @@ export const works: Project[] = [
     icon: "https://static-cdn.jtvnw.net/jtv_user_pictures/98ff877a-7a9f-4615-b2c6-973c07ed84c8-profile_image-150x150.png",
     link: "https://pixeldreamstudios.net",
   },
-  {
-    name: "zanini-piscine",
-    description:
-      "Developed an app for Zanini Piscine to simplify booking pool opening, closing, and maintenance services. It streamlines scheduling for homeowners and helps Zanini Piscine efficiently manage their service calendar, improving both operations and customer experience.",
-    icon: "",
-    link: "#",
-  },
+  // {
+  //   name: "zanini-piscine",
+  //   description:
+  //     "Developed an app for Zanini Piscine to simplify booking pool opening, closing, and maintenance services. It streamlines scheduling for homeowners and helps Zanini Piscine efficiently manage their service calendar, improving both operations and customer experience.",
+  //   icon: "",
+  //   link: "#",
+  // },
   {
     name: "lc-training-center",
     description:
@@ -29,7 +30,7 @@ export const works: Project[] = [
   },
 ];
 
-export const repos: Project[] = [
+export const gamedev: Project[] = [
   {
     name: "salta-ebbasta",
     description:
@@ -39,21 +40,32 @@ export const repos: Project[] = [
   },
 ];
 
-export const workData: ProjectData[] = [
+export const webData: ProjectData[] = [
+  {
+    name: "akuse",
+    type: "personal",
+    nameParsed: "akuse",
+    tags: ["desktop", "windows", "linux"],
+    downloads: `250,000 +`,
+    skills: "electron,react,ts",
+  },
   {
     name: "lc-training-center",
+    type: "paid",
     nameParsed: "LC Training Center",
     tags: ["app", "ios", "android"],
     skills: "firebase,react,ts",
   },
   {
     name: "zanini-piscine",
+    type: "paid",
     nameParsed: "Zanini Piscine",
     tags: ["app", "ios", "android"],
     skills: "firebase,react,ts",
   },
   {
     name: "pixel-dream-studios",
+    type: "paid",
     nameParsed: "Pixel Dream Studios",
     tags: ["website"],
     skills: "vite,react,ts",
@@ -61,30 +73,26 @@ export const workData: ProjectData[] = [
 ];
 
 // projects data
-export const repoData: ProjectData[] = [
+export const gamedevData: ProjectData[] = [
   {
     name: "Plenty-Of-Armors",
+    type: "personal",
     nameParsed: "Plenty Of Armors",
     tags: ["minecraft", "fabric"],
-    downloads: "1,700,000 +",
+    downloads: "1,900,000 +",
     skills: "java",
     customLink: "https://www.curseforge.com/minecraft/mc-mods/plenty-of-armors",
   },
   {
-    name: "akuse",
-    nameParsed: "akuse",
-    tags: ["windows", "linux"],
-    downloads: `110,000 +`,
-    skills: "electron,react,ts",
-  },
-  {
     name: "Galilei-The-Game",
+    type: "academic",
     nameParsed: "Galilei: The Game",
     tags: ["windows", "macos", "linux"],
     skills: "unity",
   },
   {
     name: "salta-ebbasta",
+    type: "personal",
     nameParsed: "Salta Ebbasta",
     tags: ["ios", "android"],
     downloads: `30,000 +`,
@@ -92,8 +100,9 @@ export const repoData: ProjectData[] = [
 ];
 
 export const tagIcons: TagIcons[] = [
-  { tag: "app", icon: FiSmartphone },
-  { tag: "website", icon: TfiWorld },
+  { tag: "app", icon: FiSmartphone, color: "#dbb69b" },
+  { tag: "website", icon: TfiWorld, color: "#959eef" },
+  { tag: "desktop", icon: CiDesktopMouse1, color: "#c796f9" },
   { tag: "minecraft", icon: IoCubeOutline },
   { tag: "fabric", icon: FiSettings },
   { tag: "windows", icon: FaWindows },
@@ -103,4 +112,4 @@ export const tagIcons: TagIcons[] = [
   { tag: "android", icon: FaAndroid },
 ];
 
-export const projectNames: ProjectData[] = [...workData, ...repoData];
+export const projectNames: ProjectData[] = [...webData, ...gamedevData];

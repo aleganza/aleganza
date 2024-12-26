@@ -6,63 +6,36 @@
   /* min-height: 100vh; */
   margin: auto;
   overflow: hidden;
-  margin-bottom: 60px;
 }
 
 .home-section h1.heading {
-  margin-top: 100px;
-  color: var(--text-primary);
-  font-size: 38px;
-  font-weight: 400;
-  text-align: center;
-}
-
-/* about */
-.home-section .about {
-  width: 800px;
-  margin: auto;
-  margin-top: 50px;
-  text-align: center;
-}
-
-.home-section .about .description {
-  font-size: 1.3rem;
-  color: var(--text);
-}
-
-.home-section .about .skills {
   margin-top: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.home-section .about .skills img {
-  height: 50px;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  font-weight: 400;
+  /* text-align: center; */
 }
 
 /* cards */
 .home-section .cards-group {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 80px;
   margin-top: 50px;
+  gap: 30px;
 }
 
 .home-section .cards-group .card {
   display: flex;
-  gap: 30px;
+  flex-direction: column;
   width: 100%;
-  border-radius: 24px;
+  border-radius: 18px;
+  background-color: var(--background-primary);
 }
 
-.home-section .cards-group .card:nth-child(2n) {
+/* .home-section .cards-group .card:nth-child(2n) {
   flex-direction: row-reverse;
-  /* text-align: right; */
-}
+} */
 
 .home-section .cards-group .card > * {
   position: relative;
@@ -70,13 +43,13 @@
 }
 
 .home-section .cards-group .card .left {
-  flex: 1.5;
-  height: 380px;
+  /* flex: 1; */
+  height: 150px;
 }
 
 .home-section .cards-group .card .right {
-  padding-top: 20px;
-  flex: 1;
+  padding: 20px;
+  /* flex: 2; */
 }
 
 .home-section .cards-group .card .overlay {
@@ -86,7 +59,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 24px;
+  border-radius: 24px 24px 0 0;
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3));
   transition: 0.2s ease-out;
   cursor: crosshair;
@@ -94,9 +67,10 @@
 
 .home-section .cards-group .card img.banner {
   width: 100%;
-  height: 380px;
+  height: 150px;
   object-fit: cover;
-  border-radius: 24px;
+  object-position: top;
+  border-radius: 24px 24px 0 0;
 }
 
 .home-section .cards-group .card .icons {
@@ -122,21 +96,12 @@
   opacity: 1;
 }
 
-.home-section .cards-group .card:nth-child(2n) .icons {
-  flex-direction: row-reverse;
-  justify-content: start;
-  left: 10px;
-}
-
-.home-section .cards-group .card .title {
+.home-section .cards-group .card .name {
   display: flex;
   align-items: center;
-  gap: 15px;
+  /* gap: 15px; */
   margin-bottom: 10px;
-}
-
-.home-section .cards-group .card .name {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 400;
   color: var(--text);
 }
@@ -154,8 +119,9 @@
 
 .home-section .cards-group .card .tags-group {
   display: flex;
+  flex-wrap: wrap;
   gap: 5px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .home-section .cards-group .card .tag {
@@ -163,9 +129,10 @@
   gap: 5px;
   align-items: center;
   padding: 6px 10px;
+  font-size: 0.9rem;
   color: var(--text-shy);
-  background-color: var(--background-primary);
-  border-radius: 12px;
+  background-color: var(--background);
+  border-radius: 8px;
 }
 
 .home-section .cards-group .card .tag.stargazers {
@@ -178,67 +145,44 @@
   font-weight: 500;
 }
 
+.home-section .cards-group .card .type {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
 .home-section .cards-group .card .description {
   color: var(--text-shy);
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
 
 .home-section .cards-group .card .link {
-  padding: 0 5px;
   margin-top: 20px;
-}
-
-@media only screen and (max-width: 1000px) {
-  .home-section .cards-group .card .left {
-    height: 280px;
-  }
-
-  .home-section .cards-group .card img.banner {
-    height: 280px;
-  }
+  float: right;
 }
 
 @media only screen and (max-width: 900px) {
   .home-section h1.heading {
-    margin-top: 20px;
-    font-size: 30px;
-  }
-
-  .home-section .about {
-    width: auto;
-    text-align: left;
-    margin-top: 30px;
-  }
-
-  .home-section .about .skills {
-    margin-top: 30px;
+    margin-top: 60px;
   }
 
   .home-section .cards-group {
-    gap: 50px;
-    margin-top: 10px;
-  }
-
-  .home-section .cards-group .card,
-  .home-section .cards-group .card:nth-child(2n) {
-    flex-direction: column-reverse;
+    margin-top: 25px;
     gap: 20px;
   }
 
-  .home-section .cards-group .card .title {
-    margin-bottom: 6px;
+  .home-section .cards-group .card .type {
+    margin-bottom: 8px;
   }
 
+  .home-section .cards-group .card .name {
+    margin-bottom: 8px;
+  }
+  
   .home-section .cards-group .card .tags-group {
-    margin-bottom: 10px;
-  }
-
-  .home-section .cards-group .card .link {
-    margin-top: 12px;
-  }
-
-  .home-section .cards-group .card .icons {
-    left: 10px;
+    margin-bottom: 16px;
   }
 
   .home-section .cards-group .card .icons img {
@@ -247,18 +191,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .home-section .about .skills img {
-    width: 100%;
-    height: auto;
-  }
-
-  .home-section .cards-group .card img.banner {
-    height: auto;
-    aspect-ratio: 1.77;
-  }
-
-  .home-section .cards-group .card,
-  .home-section .cards-group .card:nth-child(2n) {
-    flex-direction: column-reverse;
+  .home-section .cards-group {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

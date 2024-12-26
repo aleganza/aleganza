@@ -10,6 +10,14 @@ export const getProjectParsedName = (
   return repo ? repo.nameParsed : undefined;
 };
 
+export const getProjectType = (
+  projectNames: ProjectData[],
+  name: string
+): string | undefined => {
+  const repo = projectNames.find((obj) => obj.name === name);
+  return repo ? repo.type : undefined;
+};
+
 export const getProjectTags = (
   projectNames: ProjectData[],
   name: string
@@ -45,4 +53,9 @@ export const getProjectCustomLink = (
 export const getTagIcon = (tag: string): IconType | undefined => {
   const tagIcon = tagIcons.find((obj) => obj.tag === tag);
   return tagIcon ? tagIcon.icon : undefined;
+};
+
+export const getTagColor = (tag: string): string | undefined => {
+  const tagIcon = tagIcons.find((obj) => obj.tag === tag);
+  return tagIcon ? tagIcon.color : undefined;
 };
