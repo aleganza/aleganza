@@ -1,0 +1,53 @@
+.contact-form {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  gap: 12px;
+}
+
+.contact-form form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form form .element {
+  border: none;
+  outline: none;
+  font-size: 1.05rem;
+  padding: 12px 20px;
+  border-radius: 18px;
+  background-color: var(--background-primary-t);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  color: var(--text);
+  caret-color: var(--text-primary);
+  transition: background-color 0.3s, filter 0.3s;
+}
+
+.contact-form form .element::placeholder {
+  color: var(--text-muted);
+}
+
+.contact-form form textarea.element {
+  min-height: 200px;
+  resize: none;
+  overflow-y: auto;
+}
+
+.contact-form form .element:focus {
+  filter: brightness(1.2);
+}
+
+.contact-form form .submit {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}

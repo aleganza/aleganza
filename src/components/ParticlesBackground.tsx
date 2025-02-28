@@ -1,7 +1,12 @@
-import { Container, ISourceOptions, MoveDirection, OutMode } from '@tsparticles/engine';
-import Particles, { initParticlesEngine } from '@tsparticles/react';
-import { useEffect, useMemo, useState } from 'react';
-import { loadFull } from 'tsparticles';
+import {
+  Container,
+  ISourceOptions,
+  MoveDirection,
+  OutMode,
+} from "@tsparticles/engine";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { useEffect, useMemo, useState } from "react";
+import { loadFull } from "tsparticles";
 
 const ParticlesBackground = () => {
   const [init, setInit] = useState(false);
@@ -21,12 +26,18 @@ const ParticlesBackground = () => {
   const options: ISourceOptions = useMemo(
     () => ({
       background: {
-        opacity: 0,
-        color: {
-          value: "#242422",
-        },
+        image: "radial-gradient(circle, #0A0A0A, #1B1B1B)",
+        position: "center",
+        repeat: "no-repeat",
+        size: "cover",
       },
-      fpsLimit: 120,
+      // background: {
+      //   opacity: 0,
+      //   color: {
+      //     value: "#242422",
+      //   },
+      // },
+      fpsLimit: 60,
       interactivity: {
         events: {
           onClick: {
@@ -50,7 +61,7 @@ const ParticlesBackground = () => {
       },
       particles: {
         color: {
-          value: "#f4ce34",
+          value: "#ffffff",
         },
         links: {
           enable: false,
@@ -61,7 +72,7 @@ const ParticlesBackground = () => {
           outModes: {
             default: OutMode.bounce,
           },
-          random: false,
+          random: true,
           speed: 0.5,
           straight: false,
         },
@@ -76,7 +87,7 @@ const ParticlesBackground = () => {
           value: 0.4,
         },
         shape: {
-          type: "circle",
+          type: "triangle",
         },
         size: {
           value: { min: 1, max: 3 },
@@ -84,7 +95,7 @@ const ParticlesBackground = () => {
       },
       detectRetina: true,
     }),
-    [],
+    []
   );
 
   if (init) {

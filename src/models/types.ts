@@ -12,6 +12,9 @@ export interface ProjectData {
   name: string;
   nameParsed: string;
   type: string;
+  wip?: boolean;
+  color: string;
+  darkColor: string;
   tags: Array<string>;
   downloads?: string;
   skills?: string;

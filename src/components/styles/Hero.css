@@ -1,5 +1,5 @@
 .hero {
-  margin-top: 140px !important;
+  padding-top: 140px !important;
   padding: 20px;
 }
 
@@ -20,8 +20,8 @@
 }
 
 .hero .description {
-  font-size: 1.3rem;
-  color: var(--text);
+  font-size: 1.2rem;
+  color: var(--text-supporting);
 }
 
 .hero .skills {
@@ -34,5 +34,9 @@
   height: 60px;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 768px) {
+  .hero {
+    padding-top: 20px !important;
+    padding: 20px;
+  }
 }

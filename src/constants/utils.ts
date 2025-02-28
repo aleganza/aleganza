@@ -14,19 +14,19 @@ export const web: Project[] = [
     icon: "https://static-cdn.jtvnw.net/jtv_user_pictures/98ff877a-7a9f-4615-b2c6-973c07ed84c8-profile_image-150x150.png",
     link: "https://pixeldreamstudios.net",
   },
-  // {
-  //   name: "zanini-piscine",
-  //   description:
-  //     "Developed an app for Zanini Piscine to simplify booking pool opening, closing, and maintenance services. It streamlines scheduling for homeowners and helps Zanini Piscine efficiently manage their service calendar, improving both operations and customer experience.",
-  //   icon: "",
-  //   link: "#",
-  // },
   {
     name: "lc-training-center",
     description:
       "Developed an app for the LC Training Center gym to manage member bookings more efficiently. It simplifies the process, making it easier for users to reserve classes and for staff to organize schedules, improving both the gym's operations and the user experience.",
     icon: "",
     link: "https://apps.apple.com/it/app/lc-training-center/id6499268268",
+  },
+  {
+    name: "zanini-piscine",
+    description:
+      "Developed an app for Zanini Piscine to simplify booking pool opening, closing, and maintenance services. It streamlines scheduling for homeowners and helps Zanini Piscine efficiently manage their service calendar, improving both operations and customer experience.",
+    icon: "",
+    link: "#",
   },
 ];
 
@@ -44,14 +44,18 @@ export const webData: ProjectData[] = [
   {
     name: "akuse",
     type: "personal",
+    color: "#fe526e",
+    darkColor: "#140709",
     nameParsed: "akuse",
     tags: ["desktop", "windows", "linux"],
-    downloads: `250,000 +`,
+    downloads: `300,000 +`,
     skills: "electron,react,ts",
   },
   {
     name: "lc-training-center",
     type: "paid",
+    color: "#E53935",
+    darkColor: "#1a0606",
     nameParsed: "LC Training Center",
     tags: ["app", "ios", "android"],
     skills: "firebase,react,ts",
@@ -59,6 +63,9 @@ export const webData: ProjectData[] = [
   {
     name: "zanini-piscine",
     type: "paid",
+    color: "#0091e5",
+    darkColor: "#000d14",
+    wip: true,
     nameParsed: "Zanini Piscine",
     tags: ["app", "ios", "android"],
     skills: "firebase,react,ts",
@@ -66,6 +73,8 @@ export const webData: ProjectData[] = [
   {
     name: "pixel-dream-studios",
     type: "paid",
+    color: "#f12b79",
+    darkColor: "#120c2e",
     nameParsed: "Pixel Dream Studios",
     tags: ["website"],
     skills: "vite,react,ts",
@@ -77,15 +86,19 @@ export const gamedevData: ProjectData[] = [
   {
     name: "Plenty-Of-Armors",
     type: "personal",
+    color: "#00b7d3",
+    darkColor: "#00181c",
     nameParsed: "Plenty Of Armors",
     tags: ["minecraft", "fabric"],
-    downloads: "1,900,000 +",
+    downloads: "2,000,000 +",
     skills: "java",
     customLink: "https://www.curseforge.com/minecraft/mc-mods/plenty-of-armors",
   },
   {
     name: "Galilei-The-Game",
     type: "academic",
+    color: "#56a862",
+    darkColor: "#0c170d",
     nameParsed: "Galilei: The Game",
     tags: ["windows", "macos", "linux"],
     skills: "unity",
@@ -93,6 +106,8 @@ export const gamedevData: ProjectData[] = [
   {
     name: "salta-ebbasta",
     type: "personal",
+    color: "#84b788",
+    darkColor: "#0b1526",
     nameParsed: "Salta Ebbasta",
     tags: ["ios", "android"],
     downloads: `30,000 +`,

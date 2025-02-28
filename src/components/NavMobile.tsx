@@ -1,7 +1,6 @@
 import './styles/NavMobile.css';
 
 import React, { useState } from 'react';
-import { FaItchIo } from 'react-icons/fa';
 import { FiGithub, FiLinkedin } from 'react-icons/fi';
 
 const NavMobile: React.FC = () => {
@@ -31,19 +30,22 @@ const NavMobile: React.FC = () => {
             web
           </a>
           <a href="#gamedev" className="item">
-            gamedev
+            game dev
+          </a>
+          <a href="#contact" className="item">
+            contact
           </a>
         </div>
 
         <div className="links-group">
-          <a
+          {/* <a
             href="https://aleganza.itch.io/"
             className="link"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaItchIo />
-          </a>
+          </a> */}
           <a
             href="https://www.linkedin.com/in/alessio-ganzarolli-87425a240"
             className="link"

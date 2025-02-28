@@ -1,9 +1,10 @@
-import { FiDownload, FiExternalLink, FiStar } from "react-icons/fi";
+import { FiDownload, FiExternalLink, FiStar, FiTool } from "react-icons/fi";
 import { projectNames } from "src/constants/utils";
 import { Project } from "src/models/types";
 import {
   getProjectCustomLink,
   getProjectDownloads,
+  getProjectIsWip,
   getProjectParsedName,
   getProjectSkills,
   getProjectTags,
@@ -15,23 +16,15 @@ import {
 import ActionButton from "./buttons/ActionButton";
 
 const SectionCard: React.FC<{ project: Project }> = ({ project }) => {
-  // const ICON_PATH = `images/projects/icons/${project.name}.png`;
   const BANNER_PATH = `images/projects/banners/${project.name}.jpg`;
 
-  // const [iconSrc, setIconSrc] = useState<string>(ICON_PATH);
-
-  // useEffect(() => {
-  //   const img = new Image();
-  //   img.src = ICON_PATH;
-
-  //   img.onload = () => {
-  //     setIconSrc(ICON_PATH);
-  //   };
-
-  //   img.onerror = () => {
-  //     setIconSrc(project.icon);
-  //   };
-  // }, [ICON_PATH, project.icon]);
+  const projectSkills = getProjectSkills(projectNames, project.name);
+  const projectType = getProjectType(projectNames, project.name);
+  const projectParsedName = getProjectParsedName(projectNames, project.name);
+  const projectIsWip = getProjectIsWip(projectNames, project.name);
+  const projectDownloads = getProjectDownloads(projectNames, project.name);
+  const projectTags = getProjectTags(projectNames, project.name);
+  const projectCustomLink = getProjectCustomLink(projectNames, project.name);
 
   return (
     <div className="card">
@@ -39,13 +32,9 @@ const SectionCard: React.FC<{ project: Project }> = ({ project }) => {
         <div className="overlay">
           <div className="icons">
             <img
-              src={`https://skillicons.dev/icons?i=${getProjectSkills(
-                projectNames,
-                project.name
-              )}`}
+              src={`https://skillicons.dev/icons?i=${projectSkills}`}
               alt="project-stack"
             />
-            {/* <img src={iconSrc} alt="project_logo" className="logo" /> */}
           </div>
         </div>
 
@@ -53,26 +42,30 @@ const SectionCard: React.FC<{ project: Project }> = ({ project }) => {
       </div>
 
       <div className="right">
-        <div className="type">{getProjectType(projectNames, project.name)}</div>
+        <div className="type">{projectType}</div>
 
-        <h1 className="name">
-          {getProjectParsedName(projectNames, project.name)}
-        </h1>
+        <h1 className="name">{projectParsedName}</h1>
 
         <div className="tags-group">
+          {projectIsWip && (
+            <span className="tag wip">
+              <FiTool />
+              WIP
+            </span>
+          )}
           {project.stargazers && (
             <span className="tag stargazers">
               <FiStar />
               {project.stargazers}
             </span>
           )}
-          {getProjectDownloads(projectNames, project.name) && (
+          {projectDownloads && (
             <span className="tag downloads">
-              {<FiDownload />}
-              {getProjectDownloads(projectNames, project.name)}
+              <FiDownload />
+              {projectDownloads}
             </span>
           )}
-          {getProjectTags(projectNames, project.name)?.map((tag) => {
+          {projectTags?.map((tag) => {
             const TagIcon = getTagIcon(tag);
             return (
               <span
@@ -89,17 +82,17 @@ const SectionCard: React.FC<{ project: Project }> = ({ project }) => {
 
         <div className="description">{project.description}</div>
 
-        <div className="link">
-          <a
-            href={
-              getProjectCustomLink(projectNames, project.name) || project.link
-            }
-            className="no-underline"
-            target="_blank"
-          >
-            <ActionButton text="view" iconRight={FiExternalLink} />
-          </a>
-        </div>
+        {!projectIsWip && (
+          <div className="link">
+            <a
+              href={projectCustomLink || project.link}
+              className="no-underline"
+              target="_blank"
+            >
+              <ActionButton text="view" iconRight={FiExternalLink} />
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );
