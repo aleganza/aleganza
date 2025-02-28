@@ -1,19 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./styles/Contact.css";
 import ActionButton from "./buttons/ActionButton";
-import { FiSend } from "react-icons/fi";
+import { FiSend, FiCheck } from "react-icons/fi";
 import HomeSection from "./Section";
 
 export default function Contact() {
-  const [result, setResult] = useState("");
+  const [status, setStatus] = useState<"idle" | "loading" | "success">("idle");
+
+  useEffect(() => {
+    if (status === "success") {
+      const timer = setTimeout(() => setStatus("idle"), 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [status]);
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setResult("Sending....");
+    setStatus("loading");
 
     const formData = new FormData(event.target as HTMLFormElement);
-
-    // Assicurati di rimuovere gli spazi extra o sostituirli se necessario
     formData.append("access_key", "e3c5da43-7d36-470d-9a6c-5ccc19ac9529");
 
     try {
@@ -25,15 +30,15 @@ export default function Contact() {
       const data = await response.json();
 
       if (data.success) {
-        setResult("Form Submitted Successfully");
+        setStatus("success");
         (event.target as HTMLFormElement).reset();
       } else {
         console.log("Error", data);
-        setResult(data.message || "An error occurred");
+        setStatus("idle");
       }
     } catch (error) {
       console.error("Error:", error);
-      setResult("An error occurred while submitting the form.");
+      setStatus("idle");
     }
   };
 
@@ -44,7 +49,6 @@ export default function Contact() {
       <div className="contact-form">
         <form onSubmit={onSubmit} style={{ color: "white" }}>
           <div className="form-group">
-            {/* <label htmlFor="name">Name:</label> */}
             <input
               className="element"
               placeholder="Name"
@@ -56,7 +60,6 @@ export default function Contact() {
           </div>
 
           <div className="form-group">
-            {/* <label htmlFor="email">Email:</label> */}
             <input
               className="element"
               placeholder="Email"
@@ -68,7 +71,6 @@ export default function Contact() {
           </div>
 
           <div className="form-group">
-            {/* <label htmlFor="message">Message:</label> */}
             <textarea
               className="element"
               placeholder="Message"
@@ -78,12 +80,27 @@ export default function Contact() {
             />
           </div>
 
-          {/* <button type="submit">Submit Form</button> */}
           <div className="submit">
-            <ActionButton text="submit" type="submit" iconRight={FiSend} />
+            <ActionButton
+              text={
+                status === "loading"
+                  ? "Loading..."
+                  : status === "success"
+                  ? "Sent!"
+                  : "Submit"
+              }
+              type="submit"
+              iconRight={
+                status === "loading"
+                  ? undefined
+                  : status === "success"
+                  ? FiCheck
+                  : FiSend
+              }
+              color={status === "success" ? "#28a745" : undefined}
+            />
           </div>
         </form>
-        <span>{result}</span>
       </div>
     </HomeSection>
   );
