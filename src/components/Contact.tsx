@@ -9,7 +9,7 @@ export default function Contact() {
 
   useEffect(() => {
     if (status === "success") {
-      const timer = setTimeout(() => setStatus("idle"), 5000);
+      const timer = setTimeout(() => setStatus("idle"), 3000);
       return () => clearTimeout(timer);
     }
   }, [status]);
@@ -84,10 +84,10 @@ export default function Contact() {
             <ActionButton
               text={
                 status === "loading"
-                  ? "Loading..."
+                  ? "loading..."
                   : status === "success"
-                  ? "Sent!"
-                  : "Submit"
+                  ? "sent!"
+                  : "submit"
               }
               type="submit"
               iconRight={
