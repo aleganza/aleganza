@@ -1,6 +1,6 @@
 ## Hey There! 🙈
 
-I'm **Alessio**, a 21 years old fullstack web developer who likes to develop apps, websites and put some pixel art in my projects. I've been programming using Javascript/Typescript for 3 years and I love to challenge myself developing open-source projects.
+I'm **Alessio**, a 22 years old fullstack web developer who likes to develop apps, websites and put some pixel art in my projects. I've been programming using Javascript/Typescript for 3 years and I love to challenge myself developing open-source projects.
 <br>
 
 Occasionally, I develop websites and apps as a **freelancer**. Have a look at my work [here](https://aleganza.dev/).
