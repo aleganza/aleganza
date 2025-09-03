@@ -1,9 +1,8 @@
-## Hey! 🙈
+web developer and pixel artist.
 
-Web Developer and Pixel Artist.
 <br>
 
-Occasionally, I develop websites and apps as a **freelancer**. Have a look at my work [here](https://aleganza.dev/).
+occasionally, I develop websites and apps as a **freelancer**. have a look at my work [here](https://aleganza.dev/).
 
 <br>
 
@@ -16,7 +15,7 @@ Occasionally, I develop websites and apps as a **freelancer**. Have a look at my
 [![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/aleganza__)
 
 <details>
-  <summary><h2>Github Stats</h2></summary>
+  <summary><h2>stats</h2></summary>
 
   ![](https://komarev.com/ghpvc/?username=aleganza&style=for-the-badge&color=red)
 
