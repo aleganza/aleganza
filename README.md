@@ -1,7 +1,6 @@
-### Hey! 🙈
-
-<p>I'm a web developer and pixel artist.</p>
-<p></p>Occasionally, I develop websites and apps as a **freelancer**. Have a look at my work [here](https://aleganza.dev/).<p/>
+Web developer and pixel artist. <br>
+Occasionally, I develop websites and apps as a **freelancer**. <br>
+Have a look at my work [here](https://aleganza.dev/).
 
 <br>
 
